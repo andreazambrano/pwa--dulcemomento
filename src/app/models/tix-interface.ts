@@ -16,6 +16,7 @@ export interface TixInterface{
 	duracion?:string;
 	images?: Array<string>;
 	modelo?:string;
+	new?:string;
 	notes?:string;
 	precio?:number;
 	price?:number;

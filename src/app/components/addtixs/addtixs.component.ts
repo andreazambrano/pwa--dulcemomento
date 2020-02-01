@@ -73,6 +73,7 @@ public tix : TixInterface ={
       tallas:[],
       price:0,
       discount:0,
+      new:"false"
       category:"",
       status:"",
       images:[]
