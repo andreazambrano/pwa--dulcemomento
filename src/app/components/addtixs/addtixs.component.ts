@@ -68,6 +68,11 @@ public tix : TixInterface ={
       productName:"",
       description:"",
       notes:"",
+      codigo:"",
+      modelo:"",
+      tallas:[],
+      price:"",
+      discount:"",
       category:"",
       status:"",
       images:[]
