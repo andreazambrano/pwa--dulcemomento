@@ -15,7 +15,7 @@ export interface TixInterface{
 	distancia?:string;
 	duracion?:string;
 	images?: Array<string>;
-	modelo:?string;
+	modelo?:string;
 	notes?:string;
 	precio?:number;
 	price?:number;
