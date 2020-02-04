@@ -8,132 +8,21 @@
                         <div class="row clearfix">
                         
                             <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
+                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6" *ngFor="let tix of tixs">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/1.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
+                                        <figure class="image"><a routerLink="dulceproductdetail/{{tix.id}}"><img src="{{tix.images[0]}}" alt=""></a></figure>
+                                        <div class="btn-box"><a routerLink="dulceproductdetail/{{tix.id}}">Agregar al carro</a></div>
                                     </div>
                                     <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Yami Makaroons</a></h4>
+                                        <h4 class="name"><a routerLink="dulceproductdetail/{{tix.id}}">{{tix.productName}}</a></h4>
                                         <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$17.00</div>
+                                        <div class="price">${{tix.price}}</div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <div class="sale-tag">sale!</div>
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/9.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Premium Lollipop</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price"><del>$15.00</del> $9.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <div class="sale-tag">sale!</div>
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/3.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">French Macaroon</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$17.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/4.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Classic Macaroon</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$22.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                         
-
-                           
-
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/7.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Hearts Lollipop</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$17.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/8.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Coffee Cake</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$39.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/2.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Lemon Lollipop</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price">$35.00</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                          
-                            <!-- Shop Item --> 
-                            <div class="shop-item col-lg-4 col-md-6 col-sm-12 col-xs-6">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <div class="sale-tag">sale!</div>
-                                        <figure class="image"><a href="shop-single.html"><img src="assets/assetsdulce/images/resource/products/12.jpg" alt=""></a></figure>
-                                        <div class="btn-box"><a href="shopping-cart.html">Agregar al carro</a></div>
-                                    </div>
-                                    <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html">Authentic Macaroons</a></h4>
-                                        <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star light"></span></div>
-                                        <div class="price"><del>$29.00</del> $25.00</div>
-                                    </div>
-                                </div>
-                            </div>
+                     
                         </div>
                     </div>
                 </div>
@@ -147,7 +36,7 @@
                             <div class="sidebar-widget search-widget">
                                 <form method="post" action="contact.html">
                                     <div class="form-group">
-                                        <input type="search" name="search-field" value="" placeholder="Search products…" required>
+                                        <input type="search" name="search-field" value="" placeholder="Buscar producto..." required>
                                         <button type="submit"><span class="icon fa fa-search"></span></button>
                                     </div>
                                 </form>
@@ -179,25 +68,21 @@
 
                                         <div class="cart-footer">
                                             <div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>
-                                            <a href="http://html.cwsthemes.com/bellaria/cart.html" class="theme-btn">Ver carro</a>
-                                            <a href="checkout.html" class="theme-btn">Pagar</a>
+                                            <a href="#" class="theme-btn">Ver carro</a>
+                                            <a href="#" class="theme-btn">Pagar</a>
                                         </div>
                                     </div> <!--end shopping-cart -->
                                 </div>
                             </div>
 
                             <!-- Tags Widget -->
-                            <div class="sidebar-widget tags-widget">
-                                <h3 class="widget-title">Tags</h3>
+                             <div class="sidebar-widget tags-widget">
+                                <h3 class="widget-title">Categoría</h3>
                                 <ul class="tag-list clearfix">
-                                    <li><a href="index-7.html#">Bars</a></li>
-                                    <li><a href="index-7.html#">Caramels</a></li>
-                                    <li><a href="index-7.html#">Chocolate</a></li>
-                                    <li><a href="index-7.html#">Fruit</a></li>
-                                    <li><a href="index-7.html#">Nuts</a></li>
-                                    <li><a href="index-7.html#">Toffees</a></li>
-                                    <li><a href="index-7.html#">Top Rated</a></li>
-                                    <li><a href="index-7.html#">Truffles</a></li>
+                                    <li><a href="#">Ponqué</a></li>
+                                    <li><a href="#">Mini-ponqué</a></li>
+                                    <li><a href="#">Galletas</a></li>
+                                
                                 </ul>
                             </div>
                         </div>

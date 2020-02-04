@@ -67,6 +67,7 @@ import {
 	DulcefooterComponent,
 	DulcecatalogComponent,
 	DulcetopbarComponent,
+	DulceproductdetailComponent,
 
 	}from "./components/index.paginas";
 
@@ -138,7 +139,8 @@ const app_routes: Routes = [
 	{path:'dulcecatalog',component:DulcecatalogComponent},
 	{path:'dulceslider',component:DulcesliderComponent},
 	{path:'dulcefooter',component:DulcefooterComponent},
-		{path:'admin',component:AdminComponent},
+	{path:'admin',component:AdminComponent},
+	{path:'dulceproductdetail/:id',component:DulceproductdetailComponent},
 	{path:'**',pathMatch:'full',redirectTo:''}
 	];
 	export const app_routing = RouterModule.forRoot(app_routes);

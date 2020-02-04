@@ -141,6 +141,7 @@ import { DulcetopbarComponent } from './components/dulcetopbar/dulcetopbar.compo
 import { DulcefooterComponent } from './components/dulcefooter/dulcefooter.component';
 import { DulcesliderComponent } from './components/dulceslider/dulceslider.component';
 import { DulcecatalogComponent } from './components/dulcecatalog/dulcecatalog.component';
+import { DulceproductdetailComponent } from './components/dulceproductdetail/dulceproductdetail.component';
 
 
 
@@ -238,6 +239,7 @@ import { DulcecatalogComponent } from './components/dulcecatalog/dulcecatalog.co
     DulcefooterComponent,
     DulcesliderComponent,
     DulcecatalogComponent,
+    DulceproductdetailComponent,
 
   ],
   imports: [

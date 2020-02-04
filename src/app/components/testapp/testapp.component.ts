@@ -9,13 +9,13 @@ export class TestappComponent implements OnInit {
 
   constructor() { }
    loadAPI = null;
-  url = "assets/assetsprasi/js/main.js";
+  url = "assets/assetsdulce/js/main-slider-script.js";
 
   ngOnInit() {
-  	// this.loadAPI = new Promise(resolve => {
-   //        console.log("resolving promise...");
-   //        this.loadScript();
-   //      });
+  	this.loadAPI = new Promise(resolve => {
+          console.log("resolving promise...");
+          this.loadScript();
+        });
   }
    public loadScript() {
       console.log("preparing to load...");

@@ -91,6 +91,7 @@ public tix : TixInterface ={
       productName: ['', [Validators.required]],
       description: ['', [Validators.required]],
       notes: ['', [Validators.required]],
+      price: ['', [Validators.required]],
       category: ['', [Validators.required]]
       });
   }
@@ -147,7 +148,7 @@ public tix : TixInterface ={
     if (this._uw.errorFormAddtixs){
       this.sendTix();
     }
-    this.router.navigate(['/mytixs'])
+    this.router.navigate(['/addtixs'])
   }
   reset():void{
     this._uw.selectorA=true;

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {DataApiService} from '../../services/data-api.service';
+import { TixInterface } from '../../models/tix-interface'; 
+import { UserWService } from "../../services/user-w.service";
+
 
 @Component({
   selector: 'app-dulcecatalog',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DulcecatalogComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(
+  	 private dataApi: DataApiService,
+    public _uw:UserWService
+  	) { }
+public tixs:TixInterface;
+   ngOnInit() {
+  	  this.getAllTixs();
   }
+
+getAllTixs(){
+        this.dataApi.getAllTixs().subscribe((res:any) => {
+      if (res[0] === undefined){
+        console.log("no");
+       }else{
+        this.tixs=res;            
+        }
+     });  
+    }
 
 }

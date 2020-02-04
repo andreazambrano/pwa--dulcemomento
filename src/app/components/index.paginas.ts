@@ -65,3 +65,4 @@ export { DulcetopbarComponent } from "./dulcetopbar/dulcetopbar.component";
 export { DulcefooterComponent } from "./dulcefooter/dulcefooter.component";
 export { DulcecatalogComponent } from "./dulcecatalog/dulcecatalog.component";
 export { DulcesliderComponent } from "./dulceslider/dulceslider.component";
+export { DulceproductdetailComponent } from "./dulceproductdetail/dulceproductdetail.component";
