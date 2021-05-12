@@ -40,7 +40,7 @@
     "ngx-moment": "^3.5.0",
     "ngx-owl-carousel-o": "^2.0.3",
     "ngx-slick-carousel": "^0.4.7",
-    "nodemailer": "^6.4.2",
+    "nodemailer": "^6.4.16",
     "pouchdb": "^7.1.1",
     "pouchdb-upsert": "^2.2.0",
     "rxjs": "~6.4.0",
